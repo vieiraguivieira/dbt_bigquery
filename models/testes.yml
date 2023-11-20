@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+    - name: users_by_country
+      description: "users by country"
+      columns:
+          - name: country
+            tests:
+                - not_null
+
+          - name: users
+            description: "count of users"
+            tests:
+                - int
+                - not null
